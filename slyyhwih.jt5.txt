@@ -1,0 +1,682 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   Assets/AIRandMove.cs
+#	new file:   Assets/AIRandMove.cs.meta
+#	new file:   Assets/EasyTouch.meta
+#	new file:   Assets/EasyTouch/Documentation.meta
+#	new file:   Assets/EasyTouch/Documentation/EasyButton 1.0.pdf
+#	new file:   Assets/EasyTouch/Documentation/EasyButton 1.0.pdf.meta
+#	new file:   Assets/EasyTouch/Documentation/EasyJoystick 2.0.pdf
+#	new file:   Assets/EasyTouch/Documentation/EasyJoystick 2.0.pdf.meta
+#	new file:   Assets/EasyTouch/Documentation/EasyTouch 3.0.pdf
+#	new file:   Assets/EasyTouch/Documentation/EasyTouch 3.0.pdf.meta
+#	new file:   Assets/EasyTouch/Example.meta
+#	new file:   Assets/EasyTouch/Example/C# Example.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/Bullet.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/Bullet.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/Bullet.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/Bullet.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/ButtonExample.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/ButtonExample.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/ETPlayer.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Example for EasyButton/ETPlayer.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example-thirdPerson_DirectEventMode.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example-thirdPerson_DirectEventMode/JoystickEvent.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example-thirdPerson_DirectEventMode/JoystickEvent.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example_FirstPerson_DirectMode.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example_FirstPerson_DirectMode/GUIFirstDirect.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example_FirstPerson_DirectMode/GUIFirstDirect.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/ExitButton.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/ExitButton.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/FirstPerson-DirectMode-DoubleJoystick.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/FirstPerson-DirectMode-DoubleJoystick.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/ThirdPerson-DirectEventMode-DoubleJoystick.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/ThirdPerson-DirectEventMode-DoubleJoystick.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/3rd Person Controller.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/3rd Person Controller.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Constructor.FBX
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Constructor.FBX.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Landscape_01.FBX
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Landscape_01.FBX.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Flare.png
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Flare.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Floor 2.psd
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Floor 2.psd.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Floor.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Floor.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Gradient.png
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Gradient.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Particle.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Particle.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Skyball.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Skyball.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Terrain.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/Terrain.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/White.png
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Materials/White.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Sky_Ball.FBX
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Landscape/Sky_Ball.FBX.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/constructor_done.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/constructor_done.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/healthglow.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/healthglow.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/main_player_diffuse_deleteme.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/main_player_diffuse_deleteme.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/weapon.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Materials/weapon.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Player.FBX
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Player.FBX.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Textures.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Textures/constructor_diffuse.png
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Textures/constructor_diffuse.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Textures/constructor_normals.png
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Model/Textures/constructor_normals.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Prefab/WorldCenter.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyJoystick/_Prefab/WorldCenter.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/FreeCam.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/FreeCam.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/GuiCam.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/GuiCam.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/floor.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/floor.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/green.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/green.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/tree.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-FreeCam/_Materials/tree.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/GuiPhoto.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/GuiPhoto.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/Photo.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/Photo.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Materials.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Materials/Cadre.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Materials/Cadre.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Materials/photo 1.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Materials/photo 1.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Texture.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Texture/Penguins.jpg
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-ManipulationImage/_Texture/Penguins.jpg.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer/GuiLayer.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer/GuiLayer.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer/TouchLayer.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer/TouchLayer.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/Bouncy.physicmaterial
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/Bouncy.physicmaterial.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/GuiMultiFinger.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/GuiMultiFinger.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ObjectTouch.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ObjectTouch.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ScreenTouch.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ScreenTouch.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/SlowRotate.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/SlowRotate.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_Mesh.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_Mesh/Plan.asset
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_Mesh/Plan.asset.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_OtherScript.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_OtherScript/bord.js
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/_OtherScript/bord.js.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/DoubleTap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/DoubleTap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Drag.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Drag.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/GuiOneFinger.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/GuiOneFinger.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/LongTap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/LongTap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Swipe.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Swipe.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Tap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Tap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/TouchStart.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/TouchStart.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-StartMenu.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-StartMenu/GuiStartMenu.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-StartMenu/GuiStartMenu.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/GuiTwoFinger.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/GuiTwoFinger.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Pinch.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Pinch.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Twist.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Twist.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoDoubleTap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoDoubleTap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoDrag.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoDrag.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoLongTap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoLongTap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoSwipe.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoSwipe.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoTap.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoTap.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoTouchStart.cs
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoTouchStart.cs.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/ManipulationImage.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/ManipulationImage.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/MultiLayers.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/MultiLayers.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/MultipleFingers.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/MultipleFingers.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/OneFinger.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/OneFinger.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/TwoFinger.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/Examples for EasyTouch/TwoFinger.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/StartMenu.unity
+#	new file:   Assets/EasyTouch/Example/C# Example/StartMenu.unity.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Button_01_Normal_Shoot_B.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Button_01_Normal_Shoot_B.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Button_01_Pressed_Shoot_B.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Button_01_Pressed_Shoot_B.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Circle.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Circle.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/GlowDisk.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/GlowDisk.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/GlowDisk01.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/GlowDisk01.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Player.tif
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Player.tif.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/GlowDisk01.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/GlowDisk01.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Ring01.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Ring01.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Spot.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Spot.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Trail.prefab
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Resources/Trail.prefab.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring01.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring01.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring01.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring01.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring02.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Ring02.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot01.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot01.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot03.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Spot03.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Trail.png
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/Trail.png.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/background.jpg
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/background.jpg.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/background.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/background.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/checker_large.bmp
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/checker_large.bmp.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/healthglow.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/healthglow.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/main_player_diffuse_deleteme.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/main_player_diffuse_deleteme.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/sphere.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/sphere.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/trail.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/trail.mat.meta
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/weapon.mat
+#	new file:   Assets/EasyTouch/Example/C# Example/_Materials_ressources/weapon.mat.meta
+#	new file:   Assets/EasyTouch/Plugins.meta
+#	new file:   Assets/EasyTouch/Plugins/EasyButton.cs
+#	new file:   Assets/EasyTouch/Plugins/EasyButton.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/EasyJoystick.cs
+#	new file:   Assets/EasyTouch/Plugins/EasyJoystick.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/EasyTouch.cs
+#	new file:   Assets/EasyTouch/Plugins/EasyTouch.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/EasyTouchInput.cs
+#	new file:   Assets/EasyTouch/Plugins/EasyTouchInput.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyButtonCallBack.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyButtonCallBack.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyButtonInspector.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyButtonInspector.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyJoystickCallBack.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyJoystickCallBack.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyJoystickInspector.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyJoystickInspector.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyTouchInspector.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyTouchInspector.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyTouchMenu.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasyTouchMenu.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasytouchCallBack.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/GUIEasytouchCallBack.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Editor/HTGUILayout.cs
+#	new file:   Assets/EasyTouch/Plugins/Editor/HTGUILayout.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Finger.cs
+#	new file:   Assets/EasyTouch/Plugins/Finger.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Gesture.cs
+#	new file:   Assets/EasyTouch/Plugins/Gesture.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Gizmos.meta
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyButton Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyButton Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyJoystick Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyJoystick Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyTouch Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Gizmos/EasyTouch Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/MonoSingleton.cs
+#	new file:   Assets/EasyTouch/Plugins/MonoSingleton.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/MovingJoystick.cs
+#	new file:   Assets/EasyTouch/Plugins/MovingJoystick.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/Button_active.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/Button_active.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/Button_normal.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/Button_normal.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyButton_Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyButton_Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyJoystick_Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyJoystick_Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyTouch_Icon.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/EasyTouch_Icon.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Area.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Area.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Dead.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Dead.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Touch.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/RadialJoy_Touch.png.meta
+#	new file:   Assets/EasyTouch/Plugins/Resources/secondFinger.png
+#	new file:   Assets/EasyTouch/Plugins/Resources/secondFinger.png.meta
+#	new file:   Assets/EasyTouch/Plugins/VirtualScreen.cs
+#	new file:   Assets/EasyTouch/Plugins/VirtualScreen.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template.meta
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyButtonTemplate.cs
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyButtonTemplate.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyJoystickTemplate.cs
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyJoystickTemplate.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyTouchTemplate.cs
+#	new file:   Assets/EasyTouch/Plugins/_C#-Event-Template/C_EasyTouchTemplate.cs.meta
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template.meta
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyButtonTemplate.js
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyButtonTemplate.js.meta
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyJoystickTemplate.js
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyJoystickTemplate.js.meta
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyTouchTemplate.js
+#	new file:   Assets/EasyTouch/Plugins/_Java-Event-Template/J_EasyTouchTemplate.js.meta
+#	new file:   Assets/EasyTouch/Readme_first.txt
+#	new file:   Assets/EasyTouch/Readme_first.txt.meta
+#	new file:   Assets/FT_FreeSample.meta
+#	new file:   Assets/FT_FreeSample/Anim.meta
+#	new file:   Assets/FT_FreeSample/Anim/FlashLight.anim
+#	new file:   Assets/FT_FreeSample/Anim/FlashLight.anim.meta
+#	new file:   Assets/FT_FreeSample/Anim/LightAnim.anim
+#	new file:   Assets/FT_FreeSample/Anim/LightAnim.anim.meta
+#	new file:   Assets/FT_FreeSample/Anim/LightFallOff.anim
+#	new file:   Assets/FT_FreeSample/Anim/LightFallOff.anim.meta
+#	new file:   Assets/FT_FreeSample/Anim/LightFallOff_Hit.anim
+#	new file:   Assets/FT_FreeSample/Anim/LightFallOff_Hit.anim.meta
+#	new file:   Assets/FT_FreeSample/Anim/RotateCAM.anim
+#	new file:   Assets/FT_FreeSample/Anim/RotateCAM.anim.meta
+#	new file:   Assets/FT_FreeSample/FBX.meta
+#	new file:   Assets/FT_FreeSample/FBX/AuraCylinder01.fbx
+#	new file:   Assets/FT_FreeSample/FBX/AuraCylinder01.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/AuraCylinder02.fbx
+#	new file:   Assets/FT_FreeSample/FBX/AuraCylinder02.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/Cylinder08.fbx
+#	new file:   Assets/FT_FreeSample/FBX/Cylinder08.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/DotCylinder03.fbx
+#	new file:   Assets/FT_FreeSample/FBX/DotCylinder03.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/Grid.fbx
+#	new file:   Assets/FT_FreeSample/FBX/Grid.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/HitEmitter_A_v01.fbx
+#	new file:   Assets/FT_FreeSample/FBX/HitEmitter_A_v01.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/RocketFire01.fbx
+#	new file:   Assets/FT_FreeSample/FBX/RocketFire01.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/ShockWave_A.FBX
+#	new file:   Assets/FT_FreeSample/FBX/ShockWave_A.FBX.meta
+#	new file:   Assets/FT_FreeSample/FBX/Sphere01.fbx
+#	new file:   Assets/FT_FreeSample/FBX/Sphere01.fbx.meta
+#	new file:   Assets/FT_FreeSample/FBX/Sphere02.fbx
+#	new file:   Assets/FT_FreeSample/FBX/Sphere02.fbx.meta
+#	new file:   Assets/FT_FreeSample/Material.meta
+#	new file:   Assets/FT_FreeSample/Material/Common_AuraWave01.mat
+#	new file:   Assets/FT_FreeSample/Material/Common_AuraWave01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/DarkAura01.mat
+#	new file:   Assets/FT_FreeSample/Material/DarkAura01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Dust_A.mat
+#	new file:   Assets/FT_FreeSample/Material/Dust_A.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Add_Core01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Add_Core01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Alpha_Core01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Alpha_Core01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Alpha_SubSmoke01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Alpha_SubSmoke01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Flare01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Flare01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Rock01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_Rock01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/FTEM_WoodChip01.mat
+#	new file:   Assets/FT_FreeSample/Material/FTEM_WoodChip01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Fire.mat
+#	new file:   Assets/FT_FreeSample/Material/Fire.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Flare02.mat
+#	new file:   Assets/FT_FreeSample/Material/Flare02.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Flare_Red.mat
+#	new file:   Assets/FT_FreeSample/Material/Flare_Red.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/GroundDark01.mat
+#	new file:   Assets/FT_FreeSample/Material/GroundDark01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Hit01.mat
+#	new file:   Assets/FT_FreeSample/Material/Hit01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Line02.mat
+#	new file:   Assets/FT_FreeSample/Material/Line02.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/RedDotLine02.mat
+#	new file:   Assets/FT_FreeSample/Material/RedDotLine02.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/RocketFire01.mat
+#	new file:   Assets/FT_FreeSample/Material/RocketFire01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/ShockWave01.mat
+#	new file:   Assets/FT_FreeSample/Material/ShockWave01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/ShockWave02.mat
+#	new file:   Assets/FT_FreeSample/Material/ShockWave02.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Slash09.mat
+#	new file:   Assets/FT_FreeSample/Material/Slash09.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Smoke01.mat
+#	new file:   Assets/FT_FreeSample/Material/Smoke01.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Smoke02.mat
+#	new file:   Assets/FT_FreeSample/Material/Smoke02.mat.meta
+#	new file:   Assets/FT_FreeSample/Material/Spark02.mat
+#	new file:   Assets/FT_FreeSample/Material/Spark02.mat.meta
+#	new file:   Assets/FT_FreeSample/Scene.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleScene.unity
+#	new file:   Assets/FT_FreeSample/Scene/SampleScene.unity.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/FTsample_ClickToSpawn.cs
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/FTsample_ClickToSpawn.cs.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/Rotate360.anim
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/Rotate360.anim.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/RotateAnim.controller
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/RotateAnim.controller.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/T_Title.png
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/T_Title.png.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground.mat
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground.mat.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground_color02.png
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground_color02.png.meta
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground_normal.png
+#	new file:   Assets/FT_FreeSample/Scene/SampleSceneData/ground_normal.png.meta
+#	new file:   Assets/FT_FreeSample/Script.meta
+#	new file:   Assets/FT_FreeSample/Script/AnimationScrollTexture.js
+#	new file:   Assets/FT_FreeSample/Script/AnimationScrollTexture.js.meta
+#	new file:   Assets/FT_FreeSample/Script/AnimationSpriteSheet.js
+#	new file:   Assets/FT_FreeSample/Script/AnimationSpriteSheet.js.meta
+#	new file:   Assets/FT_FreeSample/Script/DeadTime.js
+#	new file:   Assets/FT_FreeSample/Script/DeadTime.js.meta
+#	new file:   Assets/FT_FreeSample/Script/FTEM_AnimationScrollTexture.cs
+#	new file:   Assets/FT_FreeSample/Script/FTEM_AnimationScrollTexture.cs.meta
+#	new file:   Assets/FT_FreeSample/Script/FTEM_AnimationSpriteSheet.cs
+#	new file:   Assets/FT_FreeSample/Script/FTEM_AnimationSpriteSheet.cs.meta
+#	new file:   Assets/FT_FreeSample/Script/FTEM_DeadTime.cs
+#	new file:   Assets/FT_FreeSample/Script/FTEM_DeadTime.cs.meta
+#	new file:   Assets/FT_FreeSample/TIPS.meta
+#	new file:   Assets/FT_FreeSample/TIPS/tips01.png
+#	new file:   Assets/FT_FreeSample/TIPS/tips01.png.meta
+#	new file:   Assets/FT_FreeSample/TIPS/tips02.png
+#	new file:   Assets/FT_FreeSample/TIPS/tips02.png.meta
+#	new file:   Assets/FT_FreeSample/Texture.meta
+#	new file:   Assets/FT_FreeSample/Texture/Common_AuraWave01.png
+#	new file:   Assets/FT_FreeSample/Texture/Common_AuraWave01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/DarkAura01.png
+#	new file:   Assets/FT_FreeSample/Texture/DarkAura01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/DotLine.psd
+#	new file:   Assets/FT_FreeSample/Texture/DotLine.psd.meta
+#	new file:   Assets/FT_FreeSample/Texture/Dust_A.png
+#	new file:   Assets/FT_FreeSample/Texture/Dust_A.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Core01.png
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Core01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Flare01.png
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Flare01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Rock01.png
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_Rock01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_SubSmoke01.png
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_SubSmoke01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_WoodChip01.png
+#	new file:   Assets/FT_FreeSample/Texture/FTEM_WoodChip01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/Flare02.png
+#	new file:   Assets/FT_FreeSample/Texture/Flare02.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/Flare_Red.png
+#	new file:   Assets/FT_FreeSample/Texture/Flare_Red.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/GroundDark01.png
+#	new file:   Assets/FT_FreeSample/Texture/GroundDark01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/Hit01.psd
+#	new file:   Assets/FT_FreeSample/Texture/Hit01.psd.meta
+#	new file:   Assets/FT_FreeSample/Texture/Line01.png
+#	new file:   Assets/FT_FreeSample/Texture/Line01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/RocketFire01.png
+#	new file:   Assets/FT_FreeSample/Texture/RocketFire01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave01.png
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave02.psd
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave02.psd.meta
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave_A.png
+#	new file:   Assets/FT_FreeSample/Texture/ShockWave_A.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/Smoke01.png
+#	new file:   Assets/FT_FreeSample/Texture/Smoke01.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/Smoke02.png
+#	new file:   Assets/FT_FreeSample/Texture/Smoke02.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/slash09_Reverse_anim.png
+#	new file:   Assets/FT_FreeSample/Texture/slash09_Reverse_anim.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/slash09_anim.png
+#	new file:   Assets/FT_FreeSample/Texture/slash09_anim.png.meta
+#	new file:   Assets/FT_FreeSample/Texture/spark01.psd
+#	new file:   Assets/FT_FreeSample/Texture/spark01.psd.meta
+#	new file:   Assets/FT_FreeSample/_Prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT CartoonEffect Volume01 --- Landing01_1shot.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT CartoonEffect Volume01 --- Landing01_1shot.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT CartoonEffect Volume02 --- DarkCircle01_5sec.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT CartoonEffect Volume02 --- DarkCircle01_5sec.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT FreeSample --- RocketFire01.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT FreeSample --- RocketFire01.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT MagicEffect Volume03 --- GroundFX_Fire01.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT MagicEffect Volume03 --- GroundFX_Fire01.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT Pulse Volume01 --- RedFlareFX_5sec.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT Pulse Volume01 --- RedFlareFX_5sec.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT Slasher --- Slash09_Mesh.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT Slasher --- Slash09_Mesh.prefab.meta
+#	new file:   Assets/FT_FreeSample/_Prefab/FT_ExplosioMaster_Explosion01.prefab
+#	new file:   Assets/FT_FreeSample/_Prefab/FT_ExplosioMaster_Explosion01.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_a.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_a.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_b.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_b.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_bb.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_bb.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_bbb.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_ball_bbb.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_cartoon_a.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_cartoon_a.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_g.prefab
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Prefabs/fx_fire_g.prefab.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Scenes.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Scenes/fx_fire_free.unity
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Scenes/fx_fire_free.unity.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_a.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_a.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_b.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_b.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_bb.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_bb.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_bbb.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_ball_bbb.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_cartoon_a.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_cartoon_a.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_g.mat
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/Materials/fx_fire_g.mat.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_a.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_a.png.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_b.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_b.png.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_bb.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_bb.png.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_bbb.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_ball_bbb.png.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_cartoon_a.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_cartoon_a.png.meta
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_g.png
+#	new file:   Assets/FX_Kandol_Pack/FX_effect_sprite_image01/FX_fire_effects_free/Textures/fx_fire/fx_fire_g.png.meta
+#	new file:   Assets/Materials.meta
+#	new file:   Assets/Materials/SkullBonesFloor.meta
+#	new file:   Assets/Materials/SkullBonesFloor/SkullBonesFloor_10.mat
+#	new file:   Assets/Materials/SkullBonesFloor/SkullBonesFloor_10.mat.meta
+#	new file:   Assets/Materials/StoneFloor.meta
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_06.mat
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_06.mat.meta
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_07.mat
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_07.mat.meta
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_08.mat
+#	new file:   Assets/Materials/StoneFloor/StoneFloor_08.mat.meta
+#	new file:   Assets/Materials/WoodFloor.meta
+#	new file:   Assets/Materials/WoodFloor/floor_09_01.mat
+#	new file:   Assets/Materials/WoodFloor/floor_09_01.mat.meta
+#	new file:   Assets/Materials/WoodFloor/floor_09_02.mat
+#	new file:   Assets/Materials/WoodFloor/floor_09_02.mat.meta
+#	new file:   Assets/Materials/WoodFloor/floor_09_03.mat
+#	new file:   Assets/Materials/WoodFloor/floor_09_03.mat.meta
+#	new file:   Assets/New Terrain.asset
+#	new file:   Assets/New Terrain.asset.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Circle Defender.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Circle Defender.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Serapia Binder.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Serapia Binder.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Silver Guarder.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Silver Guarder.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Soul of Phillon Defender.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/Materials/Soul of Phillon Defender.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/example.unity
+#	new file:   Assets/SciFi Fighters + Spaceships Free/example.unity.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Circle Defender.obj
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Circle Defender.obj.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12051201Mat.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12051201Mat.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12053401Mat.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12053401Mat.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12111101Mat.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12111101Mat.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12882801Mat.mat
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Materials/12882801Mat.mat.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Serapia Binder.obj
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Serapia Binder.obj.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Silver Guarder.obj
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Silver Guarder.obj.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Soul of Phillon Defender.obj
+#	new file:   Assets/SciFi Fighters + Spaceships Free/obj/Soul of Phillon Defender.obj.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Circle Defender.jpg
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Circle Defender.jpg.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Serapia Binder.jpg
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Serapia Binder.jpg.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Silver Guarder.jpg
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Silver Guarder.jpg.meta
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Soul of Phillon Defender.jpg
+#	new file:   Assets/SciFi Fighters + Spaceships Free/tex/Soul of Phillon Defender.jpg.meta
+#	new file:   Assets/Simple Tzar Bomb.meta
+#	new file:   Assets/Simple Tzar Bomb/Mesh.meta
+#	new file:   Assets/Simple Tzar Bomb/Mesh/Materials.meta
+#	new file:   Assets/Simple Tzar Bomb/Mesh/Materials/Tzar Bomb-02 - Default1.mat
+#	new file:   Assets/Simple Tzar Bomb/Mesh/Materials/Tzar Bomb-02 - Default1.mat.meta
+#	new file:   Assets/Simple Tzar Bomb/Mesh/Tzar Bomb.FBX
+#	new file:   Assets/Simple Tzar Bomb/Mesh/Tzar Bomb.FBX.meta
+#	new file:   Assets/Simple Tzar Bomb/Textures.meta
+#	new file:   Assets/Simple Tzar Bomb/Textures/Nuke 1024.tga
+#	new file:   Assets/Simple Tzar Bomb/Textures/Nuke 1024.tga.meta
+#	new file:   Assets/Simple Tzar Bomb/Textures/Nuke1024_NRM.tga
+#	new file:   Assets/Simple Tzar Bomb/Textures/Nuke1024_NRM.tga.meta
+#	new file:   Assets/Textures.meta
+#	new file:   Assets/Textures/SkullBonesFloor.meta
+#	new file:   Assets/Textures/SkullBonesFloor/SkullBonesFloor_10.png
+#	new file:   Assets/Textures/SkullBonesFloor/SkullBonesFloor_10.png.meta
+#	new file:   Assets/Textures/StoneFloor.meta
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_06.png
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_06.png.meta
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_07.png
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_07.png.meta
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_08.png
+#	new file:   Assets/Textures/StoneFloor/StoneFloor_08.png.meta
+#	new file:   Assets/Textures/WoodFloor.meta
+#	new file:   Assets/Textures/WoodFloor/WoodDloor_09_03.png
+#	new file:   Assets/Textures/WoodFloor/WoodDloor_09_03.png.meta
+#	new file:   Assets/Textures/WoodFloor/WoodFloor_09_01.png
+#	new file:   Assets/Textures/WoodFloor/WoodFloor_09_01.png.meta
+#	new file:   Assets/Textures/WoodFloor/WoodFloor_09_02.png
+#	new file:   Assets/Textures/WoodFloor/WoodFloor_09_02.png.meta
+#	new file:   Assets/animation.meta
+#	new file:   Assets/animation/Serapia Binder.controller
+#	new file:   Assets/animation/Serapia Binder.controller.meta
+#	new file:   Assets/animation/fly.anim
+#	new file:   Assets/animation/fly.anim.meta
+#	new file:   Assets/createPlane.cs
+#	new file:   Assets/createPlane.cs.meta
+#	new file:   Assets/delay.cs
+#	new file:   Assets/delay.cs.meta
+#	new file:   Assets/enemy.cs
+#	new file:   Assets/enemy.cs.meta
+#	new file:   Assets/floor_textures.unity
+#	new file:   Assets/floor_textures.unity.meta
+#	new file:   Assets/helloworld.unity
+#	new file:   Assets/helloworld.unity.meta
+#	new file:   Assets/prefab.meta
+#	new file:   Assets/prefab/FT FreeSample --- RocketFire01.prefab
+#	new file:   Assets/prefab/FT FreeSample --- RocketFire01.prefab.meta
+#	new file:   Assets/prefab/FT_ExplosioMaster_Explosion01.prefab
+#	new file:   Assets/prefab/FT_ExplosioMaster_Explosion01.prefab.meta
+#	new file:   Assets/prefab/Serapia Binder.prefab
+#	new file:   Assets/prefab/Serapia Binder.prefab.meta
+#	new file:   Assets/prefab/Soul of Phillon Defender.prefab
+#	new file:   Assets/prefab/Soul of Phillon Defender.prefab.meta
+#	new file:   Assets/prefab/Tzar Bomb.prefab
+#	new file:   Assets/prefab/Tzar Bomb.prefab.meta
+#	new file:   Assets/prefab/fx_fire_ball_b.prefab
+#	new file:   Assets/prefab/fx_fire_ball_b.prefab.meta
+#	new file:   Assets/prefab/laser.prefab
+#	new file:   Assets/prefab/laser.prefab.meta
+#	new file:   Assets/scene.meta
+#	new file:   Assets/scene/main.unity
+#	new file:   Assets/scene/main.unity.meta
+#	new file:   Assets/script.meta
+#	new file:   Assets/script/BasicGun.cs
+#	new file:   Assets/script/BasicGun.cs.meta
+#	new file:   Assets/script/LevelEdge.cs
+#	new file:   Assets/script/LevelEdge.cs.meta
+#	new file:   Assets/script/MoveController.cs
+#	new file:   Assets/script/MoveController.cs.meta
+#	new file:   Assets/script/animation.meta
+#
+# Untracked files:
+#	.svn/
+#	Assembly-CSharp-Editor.csproj
+#	Assembly-CSharp.csproj
+#	Library/
+#	ProjectSettings/
+#	helloworld.apk
+#	helloworld.sln
+#	helloworld.v12.suo
+#	obj/
+#
+
