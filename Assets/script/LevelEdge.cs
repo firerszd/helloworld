@@ -27,6 +27,7 @@ public class LevelEdge : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
+
     
     }
      

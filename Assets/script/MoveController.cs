@@ -6,19 +6,22 @@ public class MoveController : MonoBehaviour
 
 	// Use this for initialization
 
-    public GameObject projectilePrefab;
+    public GameObject Bullet;
+    public GameObject Missile;
     public float fireRate = 0.01f;
 
     private float nextFire = 0.0f;
     private GameObject gmc;
 
+    // 控制火的大小
     private Transform fire;
 	void Start () {
+        Debug.Log("startMeth");
         EasyJoystick.On_JoystickMove += OnJoystickMove;
         EasyJoystick.On_JoystickMoveEnd += OnJoystickMoveEnd;
         gmc = GameObject.Find("Camera");
 
-
+        // 找到火
         Transform tChild = transform.GetComponentInChildren<Transform>().FindChild("Serapia Binder");
         if(null == tChild)
         { return; }
@@ -27,8 +30,8 @@ public class MoveController : MonoBehaviour
         { return; }
         fire = tChild2;
 	
-	}
-	
+	} 
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -37,6 +40,7 @@ public class MoveController : MonoBehaviour
     //移动摇杆结束   
     void OnJoystickMoveEnd(MovingJoystick move)
     {
+        Debug.Log("OnJoystickMoveEnd");
         //停止时，角色恢复idle   
         if (move.joystickName == "New joystick")
         {
@@ -54,6 +58,7 @@ public class MoveController : MonoBehaviour
     //移动摇杆中   
     void OnJoystickMove(MovingJoystick move)
     {
+        Debug.Log("OnJoystickMove");
         if (move.joystickName != "New joystick")
         {
             return;
@@ -81,14 +86,16 @@ public class MoveController : MonoBehaviour
         }
     }
     void Shot()
-    {
+    { 
         Vector3 test1 = transform.position + transform.forward * -0.8f;
+        GameObject projectile = (GameObject)Instantiate(Bullet, transform.position + transform.forward * -0.8f + new Vector3(0, -1, 0), transform.rotation); 
+         
+        //nextFire = Time.time + fireRate;
+    }
 
-        GameObject projectile = (GameObject)Instantiate(projectilePrefab, transform.position + transform.forward * -0.8f + new Vector3(0, -1, 0), transform.rotation);
-        //GameObject projectile2 = (GameObject)Instantiate(projectilePrefab, transform.position + transform.forward * -0.8f + new Vector3(8, 0, 0), transform.rotation);
-
-        Debug.Log("Shot " + test1.x.ToString() + " " + test1.y.ToString() + " " + test1.z.ToString());
-        nextFire = Time.time + fireRate;
+    void LaunchMissile()
+    {
+        GameObject projectile = (GameObject)Instantiate(Missile, transform.position + transform.forward * -0.8f + new Vector3(0, -1, 0), transform.rotation);
     }
 
 }
