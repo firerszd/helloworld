@@ -89,7 +89,7 @@ public class NPC : MonoBehaviour {
                 wholeObject.GetComponent<back>().backToStart();
             }
         }
-    }
+    } 
  
  
     ////下面是经典鼠标点击对象的事件，大家看一下就应该知道是什么意思啦。

@@ -11,15 +11,13 @@ public class flash : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        Debug.Log(isShow.ToString());
+	void Update () { 
         isShow = !isShow;
         if (Time.time - timenow > 0.4)
         {
             timenow = Time.time;
             transform.GetComponent<UILabel>().enabled = isShow;
-        }
-        Debug.Log(Time.time.ToString());
+        } 
 	}
      
 }

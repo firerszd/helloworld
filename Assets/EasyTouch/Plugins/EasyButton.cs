@@ -304,7 +304,6 @@ public class EasyButton : MonoBehaviour {
 		EasyTouch.On_TouchStart -= On_TouchStart;
 		EasyTouch.On_TouchDown -= On_TouchDown;
 		EasyTouch.On_TouchUp -= On_TouchUp;	
-		
 		if (Application.isPlaying){
 			EasyTouch.RemoveReservedArea( buttonRect);
 		}
@@ -315,7 +314,7 @@ public class EasyButton : MonoBehaviour {
 		currentColor = buttonNormalColor;
 		buttonState = ButtonState.None;
 		VirtualScreen.ComputeVirtualScreen();
-		ComputeButtonAnchor(anchor);		
+		ComputeButtonAnchor(anchor); 
 	}
 	
 	void OnGUI(){
@@ -370,7 +369,7 @@ public class EasyButton : MonoBehaviour {
 	
 		if (buttonState == ButtonState.Up){
 			buttonState = ButtonState.None;	
-		}
+		}  
 	}
 	
 	void OnDrawGizmos(){

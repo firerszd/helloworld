@@ -238,9 +238,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\back.cs" />
-     <Compile Include="Assets\flash.cs" />
-     <Compile Include="Assets\loadScript.cs" />
+     <Compile Include="Assets\cooldown.cs" />
      <Compile Include="Assets\script\AIRandMove.cs" />
      <Compile Include="Assets\script\BasicGun.cs" />
      <Compile Include="Assets\script\DelayToInvoke.cs" />
@@ -249,9 +247,12 @@
      <Compile Include="Assets\script\MissleFly.cs" />
      <Compile Include="Assets\script\MoveController.cs" />
      <Compile Include="Assets\script\NPC.cs" />
+     <Compile Include="Assets\script\back.cs" />
      <Compile Include="Assets\script\createPlane.cs" />
      <Compile Include="Assets\script\delay.cs" />
      <Compile Include="Assets\script\enemy.cs" />
+     <Compile Include="Assets\script\flash.cs" />
+     <Compile Include="Assets\script\loadScript.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.9.4.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
