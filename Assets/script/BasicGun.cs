@@ -6,6 +6,7 @@ public class BasicGun : MonoBehaviour {
     public float damage = 10.0f;
     public float speed = 0.5f;
     public float DestroyTime = 3.0f;
+    private GameObject target;
     private Vector3 velocity;
 	// Use this for initialization
 	void Start () {
@@ -18,5 +19,5 @@ public class BasicGun : MonoBehaviour {
     void Update()
     { 
         transform.position += velocity * Time.deltaTime * 300;	
-	}
+	} 
 }

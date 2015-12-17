@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 public class MoveController : MonoBehaviour
 {
@@ -13,11 +16,15 @@ public class MoveController : MonoBehaviour
     private float nextFire = 0.0f;
     private GameObject gmc;
 
+    private long fTimeNow;
+    private bool nShot;
+
+    private int MissileCD = 4;
+
     // 控制火的大小
     private Transform fire;
     void Start()
-    {
-        
+    {        
         Debug.Log("startMeth" + this.ToString());
         EasyJoystick.On_JoystickMove += OnJoystickMove;
         EasyJoystick.On_JoystickMoveEnd += OnJoystickMoveEnd; 
@@ -91,20 +98,84 @@ public class MoveController : MonoBehaviour
     void Shot()
     { 
         Vector3 test1 = transform.position + transform.forward * -0.8f;
-        GameObject projectile = (GameObject)Instantiate(Bullet, transform.position + transform.forward * -0.8f + new Vector3(0, -1, 0), transform.rotation); 
+        GameObject projectile = (GameObject)Instantiate(Bullet, transform.position + transform.forward * -0.8f , transform.rotation); 
          
         //nextFire = Time.time + fireRate;
     }
 
     void LaunchMissile()
     {
+        if ((DateTime.Now.ToFileTime() - fTimeNow) / 10000000 < MissileCD)
+        {
+            return;
+        }
+        fTimeNow = DateTime.Now.ToFileTime();
         GameObject cdTexture = GameObject.Find("MissileCD");
         if (cdTexture != null)
         {
-            cdTexture.GetComponent<cooldown>().Cooldown();
-
+            cdTexture.GetComponent<cooldown>().Cooldown(MissileCD);
         }
         GameObject projectile = (GameObject)Instantiate(Missile, transform.position + transform.forward * -0.8f + new Vector3(0, -1, 0), transform.rotation);
+        float fDistance = 10000;
+        GameObject group = GameObject.Find("group");
+        if (null == group)
+        { return; }
+        Transform tempTrans = null;
+        foreach (Transform child in group.transform)
+        {
+            float dis = Vector3.Distance(child.position, transform.position);
+            if (dis < fDistance)
+            {
+                tempTrans = child;
+                fDistance = dis;
+            }
+        }
+        if(!tempTrans)
+        { return; }
+        projectile.GetComponent<MissleFly>().SetTarget(tempTrans);
+  
+      
+    }
+
+    void LaunchMoreMissile()
+    { 
+        GameObject group = GameObject.Find("group");
+        if (null == group)
+        { return; }
+        List<int> shuzu = new List<int>();
+        foreach (Transform child in group.transform)
+        {
+            float dis = Vector3.Distance(child.position, transform.position);
+            shuzu.Add((int)dis);
+        
+        }
+        shuzu.Sort();
+        int x = 0;
+        Vector3 nexV = new Vector3();
+        foreach(int i in shuzu)
+        {
+            ++x;
+            if (x > 3)
+            { break; }
+            foreach (Transform child in group.transform)
+            {
+                float dis = Vector3.Distance(child.position, transform.position);
+                if(i == (int)dis)
+                {
+                    if(x == 1)
+                    { nexV = new Vector3(0, -1, 0); }
+                    else if(x == 2)
+                    { nexV = new Vector3(1, -1, 0); }
+                    else if (x == 3)
+                    { nexV = new Vector3(-1, -1, 0); }
+                    nexV += transform.forward;
+                    GameObject projectile = (GameObject)Instantiate(Missile, transform.position + transform.forward * -0.8f, transform.rotation);
+                    projectile.GetComponent<MissleFly>().SetRo(nexV);
+                    projectile.GetComponent<MissleFly>().SetTarget(child);
+                }
+            }
+        }
+ 
     }
 
 }

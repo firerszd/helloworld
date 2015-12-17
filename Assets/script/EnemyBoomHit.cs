@@ -4,15 +4,24 @@ using System.Collections;
 public class EnemyBoomHit : MonoBehaviour {
 
     public GameObject projectilePrefab;
+    private GameObject roleOb;
     // Use this for initialization
     void Start()
     {
-
+        roleOb = GameObject.Find("Serapia Binder");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(null == roleOb)
+        { return; }
+        float dis = Vector3.Distance(roleOb.transform.position, transform.position);
+        if(dis < 10)
+        {
+            roleOb.GetComponent<NPC>().ReduceHP(1);
+            Destroy(transform.gameObject);
+        }
 
     }
 

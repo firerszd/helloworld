@@ -36,8 +36,11 @@ public class NPC : MonoBehaviour {
         float scal_y = transform.localScale.y;
         //它们的乘积就是高度
         npcHeight = (size_y * scal_y);
-        Instantiate(startEffect, transform.position, transform.rotation);
-        Destroy(startEffect, 1000);        
+        if(startEffect != null)
+        {
+            Instantiate(startEffect, transform.position, transform.rotation);
+            Destroy(startEffect, 1000);     
+        }   
 
     }
 
@@ -51,7 +54,7 @@ public class NPC : MonoBehaviour {
     { 
         //得到NPC头顶在3D世界中的坐标
         //默认NPC坐标点在脚底下，所以这里加上npcHeight它模型的高度即可
-        Vector3 worldPosition = new Vector3(transform.position.x, transform.position.y + npcHeight, transform.position.z);
+        Vector3 worldPosition = new Vector3(transform.position.x, transform.position.y + npcHeight + 10, transform.position.z);
         //根据NPC头顶的3D坐标换算成它在2D屏幕中的坐标
         Vector2 position = camera.WorldToScreenPoint(worldPosition);
         //得到真实NPC头顶的2D坐标
@@ -86,7 +89,7 @@ public class NPC : MonoBehaviour {
             GameObject wholeObject = GameObject.Find("GameObjectPlane");
             if(null != wholeObject)
             {
-                wholeObject.GetComponent<back>().backToStart();
+               // wholeObject.GetComponent<back>().backToStart();
             }
         }
     } 
